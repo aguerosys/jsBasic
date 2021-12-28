@@ -1,6 +1,6 @@
-let piedra = 'Piedra';
-let papel = 'Papel';
-let tijera = 'Tijera';
+let rock = 'rock';
+let paper = 'paper';
+let sicissor = 'sicissor';
 
 
 resultado = function(userOption, cpuOption){
@@ -8,13 +8,13 @@ resultado = function(userOption, cpuOption){
         case(userOption === cpuOption):
             console.log('Empate');
             break;
-        case(userOption === piedra && cpuOption === tijera):
+        case(userOption === rock && cpuOption === sicissor):
             console.log('Ganaste');
             break;
-        case(userOption === papel && cpuOption === piedra):
+        case(userOption === paper && cpuOption === rock):
             console.log('Ganaste');
             break;
-        case(userOption === tijera && cpuOption === papel):
+        case(userOption === sicissor && cpuOption === paper):
             console.log('Ganaste');
             break;
         default:   
@@ -24,5 +24,5 @@ resultado = function(userOption, cpuOption){
     
 }
 
-resultado(piedra, tijera);
+resultado(rock, sicissor);
 
