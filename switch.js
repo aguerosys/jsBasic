@@ -6,19 +6,19 @@ let sicissor = 'sicissor';
 resultado = function(userOption, cpuOption){
     switch(true){
         case(userOption === cpuOption):
-            console.log('Empate');
+            console.log('Tie');
             break;
         case(userOption === rock && cpuOption === sicissor):
-            console.log('Ganaste');
+            console.log('Win');
             break;
         case(userOption === paper && cpuOption === rock):
-            console.log('Ganaste');
+            console.log('Win');
             break;
         case(userOption === sicissor && cpuOption === paper):
-            console.log('Ganaste');
+            console.log('Win');
             break;
         default:   
-            console.log('Perdiste');
+            console.log('Lose');
             
     }
     
